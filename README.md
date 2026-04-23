@@ -47,9 +47,6 @@ En git status el archivo borrado entra en borrados
 
 ```git restore <archivo>```
 
-
-###CLASE 2
-
 Ejemplo.-
 
 git status → nos da los archivos con seguimiento y sin seguimiento 
@@ -229,4 +226,33 @@ usar :
 git commit
 
 se abrira editor de texto para crearr un titulo largo del commit
+
+# TERCERA CLASE
+
+###Crear la cuenta de github
+
+-no con la institucional, porque te quitan al final de la carrera
+
+debemos configurar el ssh con la llave ceada que debemos colocar en las configuraciones y anadimo el codigo geenrado para que git se conecte al git hub
+Se puede mas de una llave pero nos dira la siguinete clase
+
+### RECUARDA PARA GENERAR EL CODIGO 
+```ssh-keygen -t ed25519 -C "sthaicy08@gmail.com"```
+ENTRARA AL EXAMEN
+
+si usamos http cada vez te pedira usuario y contrasena a cada rato para cada modificacion
+- Si el git lo conectamos con el institucional nos dan bastentes beneficios un paqute de git
+
+- el peso maximo en git es de 100 mg de subida , un limite de 10 gb el repositorio, para eso existe el gitignore para no subir cosas muy pesadas
+
+- Se puede subir sin llave el codigo ?
+
+Si se puede pero se sufre usando https , poque a cada rato te pedira usuario y contraesna y no podras anadir nada a tu repositorio y aunque coloque bien sigue bloqueado
+
+Cuando lo clonas con https te sigue pediendo a cada ratoo usuario y contrasena
+
+###TRUCO
+
+Si me creo un repositorio como nombre de usuario puede ser usado como portafolio y se anade al perfil como un portafolio
+Ahora por 5 puntos del examen debemos crear nuestro portafolio en github
 
