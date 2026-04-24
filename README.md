@@ -256,3 +256,72 @@ Cuando lo clonas con https te sigue pediendo a cada ratoo usuario y contrasena
 Si me creo un repositorio como nombre de usuario puede ser usado como portafolio y se anade al perfil como un portafolio
 Ahora por 5 puntos del examen debemos crear nuestro portafolio en github
 
+# CUARTA CLASE
+Avanzaremos 3 temas
+
+Git remote 
+Comando q le dice a nuestra nube de dónde traer de formación, mates avanzábamos el local ahora avanzaremos en la nube 
+La URL es donde está apuntando el repositorio 
+Apodo.- es algo más informal como una variable , permite tener la URL al toque para Git push
+Git remote -v .- nos permite ver las irme exactas que estamos apuntando para subir PUSH y bajar cambios 
+GIT REMOTE SET URL .- cambia la URL q estamos apuntando, por si usamos HTTP y queremos cambiar a SSH o cambiar para apuntar a otra url, es como un ountero por eso tiene la imagen de un arquero
+
+El otro repositorio queda abandonado 
+
+- El apodo es una foma de llamar a nuestra URL 
+
+##MULTIPLES SSH
+
+que pasa si tenemos mas de una cuenta de github como en un empresa, una llave es un tunel de la computadora al git hub si necesitamos mas computadoras necesitamos mas llaves, Cada puerta tiene su cerrojo si una llave abre todas las puertas no serviria de nada
+
+Un ssh genera una llave para cada cuenta (puerta) 
+
+- Cuenta personal 
+
+Host git hub.com
+
+User git
+
+IndetityFile ~/ .ssh/id_ed25519
+
+-Cuenta secundaria Crear llave con el siguiente comando
+
+```ssh-keygen -t ed25519 -C "sthaicyo8@gmail.com" -f ~/.ssh/id_sthaicy02
+```
+
+Para crear otra llave, de ahi hacemos la prueba creando un nuevo commit
+
+pero tenemos un error al mover al git hub sigue con el mismo usuario creado antes no el nuevo estos se debe a que en las configuraciones globales ya estan con nuestro pirmer cuenta usamos la global para que cada que creemos un repo sea el usuario e email q ya teniamos
+
+Si quiero cambiar solo para una diapoo debo cambiar a configuracion local con
+
+```git config user.email "email"
+	git config user.name "name"```
+
+si queremos cambiar la global soloo debemos anadir global al comanod
+
+###EXAMEN Cual es la diferencia con local y global en el comando
+
+##Git checkout
+
+Comando que nos permite retrocede hacia atras es como ver las versiones anteriores commits
+
+Detached HEAD .- Cambiar el head, 
+
+volvemos atras debemos tratar de no modificar
+
+puedo regresar con “git checkout “nombe de rama”” c
+
+Que pasa si hacemos un cambio experimental en eun archivo antiguo?
+
+```git checkout -b feature/experimental-change```
+
+Se usa para crearr una rama nueva cuandoo realizamos un cambioio a un commit pasado  
+
+Pero no es recomendado hace cambios en commits pasados en las buenas practicas , y tampoco podemos volver atars mientras no tengamos todo commiteado
+
+Usar esto solo para visualizar los pasados pero no usar para volve atras solo para ver atras 
+
+#Checkout tal vez no entre en EXAMEN pero si el SSH 
+
+
