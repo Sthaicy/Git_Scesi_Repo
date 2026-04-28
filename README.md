@@ -325,3 +325,41 @@ Usar esto solo para visualizar los pasados pero no usar para volve atras solo pa
 #Checkout tal vez no entre en EXAMEN pero si el SSH 
 
 
+#CLASE #5 27-04-26
+
+##RAMAS 
+
+- Son como bicurfaciones de la rama original , visualmente son caminos que en algun punto comienzan a dividirse pero llega a ser una mala practica porque a veces ya no se hace cambios limpios en el codigo, tenemos el siguiente comando 
+
+```git branch```
+
+lista todas las ramas que nosotros tenemos esto ayuda a que no toquemos el codigo en main
+
+```git branch [nombre de la rama]```
+
+parar crea una rama esto tiene todo el codigo de main hasta lo ultimo con eso creamos la rama
+
+```git branch -D feature/[nombre]```
+
+- Recordarr que “git check out” nos permitia retroceder atras en los commits pero ahora nos rservira pra recorrer entre ramas , para regresar a la original “git checkout main”,
+
+- Tambien permite crear nuevas ramas y mover a la rama 
+
+```git checkout -b [nombre]```
+
+y para cambiar a ramas se usa, y el otro para crear rama e ir a ella
+
+```git swith [nombre]```
+
+```git switch -c ["nombre rama"]```
+
+Recuerda “git checkout [hash (numero del commit)]” parar volver a un commit y “git checkout main” para ir al commit actual
+
+Las ramas que mas veremos son las de "feature/[nombre rama]"
+
+- Usaremos “feat:  ” para los nombres de los commits  en las ramas y “fix:” para cambios segun errores
+
+```git log --graph --online --all```
+
+para ver las ramas y sus codigos con los que podemos ir recorriendo 
+
